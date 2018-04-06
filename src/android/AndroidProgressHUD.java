@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.text.Html;
 
 
 public class AndroidProgressHUD extends Dialog {
@@ -34,7 +34,8 @@ public class AndroidProgressHUD extends Dialog {
 		if(message != null && message.length() > 0) {
 			findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName())).setVisibility(View.VISIBLE);			
 			TextView txt = (TextView)findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName()));  
-			txt.setText(message);
+			txt.setGravity(Gravity.CENTER);
+			txt.setText(Html.fromHtml(message.toString()));
 			txt.invalidate();
 		}
 	}
@@ -49,7 +50,8 @@ public class AndroidProgressHUD extends Dialog {
 			dialog.findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName())).setVisibility(View.GONE);			
 		} else {
 			TextView txt = (TextView)dialog.findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName()) );
-			txt.setText(message);
+			txt.setGravity(Gravity.CENTER);
+			txt.setText(Html.fromHtml(message.toString()));
 		}
 		dialog.setCancelable(cancelable);
 		dialog.setOnCancelListener(cancelListener);
