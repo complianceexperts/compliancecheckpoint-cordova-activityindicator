@@ -1,4 +1,22 @@
 {
-    "name": "org.apache.cordova.plugin.ActivityIndicator",
-    "version": "1.0.0"
+  "version": "1.0.0",
+  "name": "org.apache.cordova.plugin.ActivityIndicator",
+  "author": "Rafael Agostini",
+  "cordova": {
+    "id": "org.apache.cordova.plugin.ActivityIndicator",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Activity Indicator plugin for Cordova 3.X that allows you to show a loading spinner in your Cordova's app.",
+  "license": "Apache License, Version 2.0",
+  "repo": "https://github.com/complianceexperts/org.apache.cordova.plugin.ActivityIndicator",
+  "issue": "https://github.com/complianceexperts/org.apache.cordova.plugin.ActivityIndicator/issues",
+  "keywords": [],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.8.0"
+    }
+  ]
 }
