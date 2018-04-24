@@ -61,7 +61,7 @@ public class ActivityIndicator extends CordovaPlugin {
 			public void run() {
 				
 			if (ActivityIndicator.this.activityIndicator != null) {
-				ActivityIndicator.this.activityIndicator.hide();	
+				ActivityIndicator.this.activityIndicator.dismiss();	
 				ActivityIndicator.this.activityIndicator = null;				
 				//Log.v("DISMIS", "Wait");
 			}else{
